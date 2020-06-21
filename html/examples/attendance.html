@@ -49,14 +49,13 @@ The above copyright notice and this permission notice shall be included in all c
               <p>dashboard</p>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="attendance.html">
+          <li class="nav-item active">
+            <a class="nav-link" href="./attendance.html">
               <i class="material-icons">dashboard</i>
               <p>出席一覧</p>
             </a>
           </li>
- 
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="./student.html">
               <i class="material-icons">person</i>
               <p>生徒一覧</p>
@@ -76,7 +75,7 @@ The above copyright notice and this permission notice shall be included in all c
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="javascript:;">生徒一覧</a>
+            <a class="navbar-brand" href="javascript:;">出席一覧</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -144,64 +143,33 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-12 col-md-12">
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title">生徒一覧</h4>
+                  <div class="col-lg-8 col-md-10 ml-auto mr-auto">
+                    <div class="row">
+                      <h4 class="card-title col-md-4"><a href="#"><i class="material-icons">keyboard_arrow_left</i> 前月</a></h4>
+                      <h4 class="card-title col-md-4"><a href="#">6月</a></h4>
+                      <h4 class="card-title col-md-4"><a href="#">次月 <i class="material-icons">keyboard_arrow_right</i></a></h4>
+                    </div>
+                  </div>
                 </div>
-                <div class="card-body table-responsive">
-                  <table class="table table-hover">
-                    <thead class="text-primary">
-                      <th>ID</th>
-                      <th>名前</th>
-                      <th>フリガナ</th>
-                      <th></th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>斎藤　剛</td>
-                        <td>サイトウ　ツヨシ</td>
-                        <td>
-                          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal">変更</button>
-                          <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modal-delete">削除</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>斎藤　剛</td>
-                        <td>サイトウ　ツヨシ</td>
-                        <td>
-                          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal">変更</button>
-                          <button class="btn btn-danger btn-sm">削除</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>斎藤　剛</td>
-                        <td>サイトウ　ツヨシ</td>
-                        <td>
-                          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal">変更</button>
-                          <button class="btn btn-danger btn-sm">削除</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>斎藤　剛</td>
-                        <td>サイトウ　ツヨシ</td>
-                        <td>
-                          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal">変更</button>
-                          <button class="btn btn-danger btn-sm">削除</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>佐藤　件</td>
-                        <td>サトウ　ケン</td>
-                        <td>
-                          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal">変更</button>
-                          <button class="btn btn-danger btn-sm">削除</button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class="card-body">
+                  <form>
+                   <div class="row">
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">名前</label>
+                          <input type="text" class="form-control datepicker">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">時間</label>
+                          <input type="time" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary pull-right">作成</button>
+                    <div class="clearfix"></div>
+                  </form>
                 </div>
               </div>
             </div>
